@@ -1,6 +1,6 @@
 //media
 $xl:        1900px; // you can think it is 1920
-$lg-xl:     1600px;
+$lg-xl:     1500px;
 $lg:        1440px;
 $pc:        1280px;
 $lg-tab:    1024px;
@@ -19,20 +19,20 @@ $header-trans: $header-trans-time $cubic;
 $header-change-width: $tab;
 
 // Fonts 
-$sentient-regular: 'Sentient-Regular', serif;
-$sentient-bold: 'Sentient-Bold', serif;
-$sentient-bold-italic: 'Sentient-BoldItalic', serif;
-$sentient-light-italic: 'Sentient-LightItalic', serif;
+$roboto-regular: 'Roboto', sans-serif;
+$sentient-bold: 'Roboto-Bold', sans-serif;
+// $sentient-bold-italic: 'Sentient-BoldItalic', serif;
+// $sentient-light-italic: 'Sentient-LightItalic', serif;
 
-$apercu-pro-regular: 'ApercuPro-Regular', sans-serif;
-$apercu-pro-thin: 'Apercu-Pro-Thin', sans-serif;
-$apercu-pro-bold: 'ApercuPro-Bold', sans-serif;
-$apercu-pro-medium: 'Apercu-Pro-Medium', sans-serif;
+// $apercu-pro-regular: 'ApercuPro-Regular', sans-serif;
+// $apercu-pro-thin: 'Apercu-Pro-Thin', sans-serif;
+// $apercu-pro-bold: 'ApercuPro-Bold', sans-serif;
+// $apercu-pro-medium: 'Apercu-Pro-Medium', sans-serif;
 
-$boska-regular: 'Boska-Regular', serif;
-$boska-medium: 'Boska-Medium', serif;
-$boska-medium-italic: 'Boska-MediumItalic', serif;
-$boska-bold: 'Boska-Bold', serif;
-$boska-black: 'Boska-Black', serif;
+// $boska-regular: 'Boska-Regular', serif;
+// $boska-medium: 'Boska-Medium', serif;
+// $boska-medium-italic: 'Boska-MediumItalic', serif;
+// $boska-bold: 'Boska-Bold', serif;
+// $boska-black: 'Boska-Black', serif;
 
-$source-sans-pro-bold: 'Source-Sans-Pro-Bold', sans-serif;
+// $source-sans-pro-bold: 'Source-Sans-Pro-Bold', sans-serif;

@@ -1,29 +1,15 @@
 @font-face {
-  font-family: "ApercuPro-Bold";
-  src: url("../../../fonts/ApercuPro-Bold.ttf");
+  font-family: "Roboto-Regular";
+  src: url("../../../fonts/Roboto-Regular.ttf");
   font-style: normal;
   font-weight: normal;
   font-display: swup;
 }
 @font-face {
-  font-family: "ApercuPro-Regular";
-  src: url("../../../fonts/ApercuPro/ApercuPro-Regular.ttf");
+  font-family: "Roboto-Bold";
+  src: url("../../../fonts/Roboto-Bold.ttf");
   font-style: normal;
-  font-weight: normal;
-  font-display: swup;
-}
-@font-face {
-  font-family: "Sentient-Regular";
-  src: url("../../../fonts/Sentient-Regular.otf");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swup;
-}
-@font-face {
-  font-family: "Sentient-Bold";
-  src: url("../../../fonts/Sentient-Bold.otf");
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 900;
   font-display: swup;
 }
 @font-face {
