@@ -1,0 +1,49 @@
+.btn--accent-1 .btn__prime {
+  background-color: transparent;
+  transition: 0.35s cubic-bezier(0.76, 0, 0.24, 1) 0s;
+}
+.btn--accent-1 .btn__prime:hover {
+  color: var(--white);
+  background-color: var(--dark-4);
+}
+.btn--accent-2 .btn__prime {
+  background-color: var(--white);
+  transition: 0.35s cubic-bezier(0.76, 0, 0.24, 1) 0s;
+}
+.btn--accent-2 .btn__prime:hover {
+  color: var(--white);
+  background-color: var(--dark-4);
+}
+.btn--more .btn__prime {
+  border-radius: 5rem;
+  color: var(--white);
+  background-color: var(--dark-4);
+  transition: 0.35s cubic-bezier(0.76, 0, 0.24, 1) 0s;
+}
+@media only screen and (min-width: 1024px) {
+  .btn--more .btn__prime {
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    padding: 0.3rem;
+  }
+}
+.btn--more .btn__prime:hover {
+  color: var(--dark-4);
+  background-color: var(--white);
+}
+.btn span {
+  width: 100%;
+  font-weight: bold;
+  color: var(--dark-4);
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  padding: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-flex;
+  justify-content: center;
+  transform-origin: 50% 0 0;
+  transition: transform 0.35s cubic-bezier(0.76, 0, 0.24, 1) 0s;
+  backface-visibility: hidden;
+  border: solid 0.1rem var(--dark-4);
+}

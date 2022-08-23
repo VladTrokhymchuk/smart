@@ -1,0 +1,104 @@
+@import '../core';
+
+.pop_up .cd-popup {
+    position: fixed;
+    // display: flex;
+    // align-items: center;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    // background: rgba(0, 0, 0, 0.164);
+    backdrop-filter: blur(15px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    z-index: 999;
+}
+
+.pop_up .cd-popup .cd-popup-container {
+    width: 100%;
+    height: 100%;
+    // margin-left: 16px;
+    // margin-right: 16px;
+    background: $beige;
+    text-align: center;
+    transform: translateY(-40px);
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.pop_up .cd-popup .cd-popup-container .pop__up--content {
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+    // margin-top: 116px;
+    // padding-left: 20px;
+    // padding-right: 20px;
+}
+
+
+.pop_up .cd-popup .cd-popup-container .cd-popup-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+}
+
+.pop_up .cd-popup .cd-popup-container .cd-popup-close::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -6px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.pop_up .cd-popup.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+    top: 70px;
+    height: calc(100% - 70px);
+}
+
+
+.pop_up .is-visible .cd-popup-container {
+    transform: translateY(0);
+}
+
+@media (min-width: 1024px) {
+    .pop_up .cd-popup.is-visible {
+        height: 100%;
+        top: 0;
+        padding: 90px 56px;
+    }
+
+    .pop__up--content{
+        .where__buy{
+            padding-top: 10rem;
+            .box__logo__store{
+                padding-right: 0;
+                padding-left: 0;
+            }
+            
+        }
+    }
+
+    .pop_up .cd-popup .cd-popup-container .cd-popup-close {
+        opacity: 1;
+        top: 40px;
+        right: 40px;
+
+        &::before {
+            top: 0px;
+            left: 0px;
+            width: 34px;
+            height: 34px;
+        }
+    }
+
+
+}

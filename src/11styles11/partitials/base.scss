@@ -1,0 +1,106 @@
+@import '../core';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  // Set global fonts here
+}
+
+html {
+  // MAIN REM VALUE
+  font-size: 10px;
+}
+
+body {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $blue;
+  font-feature-settings: 'pnum'on, 'lnum'on;
+}
+
+br {
+  content: " ";
+  display: block;
+  margin: 15px 0;
+}
+
+button {
+  font-family: Raleway;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: $red;
+}
+
+li {
+  list-style-type: none;
+
+  a {
+    color: $blue;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.otgs-development-site-front-end {
+  display: none;
+}
+
+// mob
+h1,
+.h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -1px;
+}
+
+h3,
+.h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+strong,
+.strong {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.wrap {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
