@@ -70,6 +70,21 @@
     }
 }
 
+.btn-search {
+    cursor: pointer;
+
+    svg {
+        &:hover {
+
+            path,
+            line {
+                transition: $hover-trans;
+                stroke: var(--blue);
+            }
+        }
+    }
+}
+
 // checkbox header
 .toggler-wrapper {
     display: block;

@@ -48,6 +48,15 @@
   border: solid 0.1rem var(--dark-4);
 }
 
+.btn-search {
+  cursor: pointer;
+}
+.btn-search svg:hover path,
+.btn-search svg:hover line {
+  transition: 0.35s cubic-bezier(0.76, 0, 0.24, 1) 0s;
+  stroke: var(--blue);
+}
+
 .toggler-wrapper {
   display: block;
   width: 3.1rem;
