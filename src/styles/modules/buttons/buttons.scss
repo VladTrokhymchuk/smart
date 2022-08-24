@@ -73,8 +73,8 @@
 // checkbox header
 .toggler-wrapper {
     display: block;
-    width: 45px;
-    height: 25px;
+    width: 3.1rem;
+    height: 1.6rem;
     cursor: pointer;
     position: relative;
 }
@@ -84,38 +84,36 @@
 }
 
 .toggler-wrapper input[type="checkbox"]:checked+.toggler-slider {
-    background-color: #44cc66;
+    background-color: var(--light-1);
 }
 
 .toggler-wrapper .toggler-slider {
-    background-color: #ccc;
+    background-color: var(--dark-3);
     position: absolute;
-    border-radius: 100px;
+    border-radius: 10rem;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
+    transition: $hover-trans;
 }
 
 .toggler-wrapper .toggler-knob {
     position: absolute;
-    -webkit-transition: all 300ms ease;
-    transition: all 300ms ease;
+    transition: $hover-trans;
 }
 
 /*Style 1*/
 
 .toggler-wrapper.style-1 input[type="checkbox"]:checked+.toggler-slider .toggler-knob {
-    left: calc(100% - 19px - 3px);
+    left: calc(100% - 1rem - 0.3rem);
 }
 
 .toggler-wrapper.style-1 .toggler-knob {
-    width: calc(25px - 6px);
-    height: calc(25px - 6px);
+    width: calc(1.6rem - 0.6rem);
+    height: calc(1.6rem - 0.6rem);
     border-radius: 50%;
-    left: 3px;
-    top: 3px;
-    background-color: #fff;
+    left: 0.3rem;
+    top: 0.3rem;
+    background-color: var(--dark-2);
 }

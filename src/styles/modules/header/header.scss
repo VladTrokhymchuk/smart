@@ -5,32 +5,67 @@
         background: var(--dark-1);
     }
 
-    // transition: $hover-trans;
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        min-height: 5rem;
 
-    &__logo {
+        @include minw($lg-tab) {
+            gap: 6.1rem;
+        }
 
-        // display: flex;
-        @include minw($lg-tab) {}
+        .navbar {
+            .menu-list {
+                ul {
+                    display: flex;
+                    gap: 1.4rem;
 
-        img {
-            max-width: 70%;
+                    @include minw($lg-tab) {
+                        gap: 3.4rem;
+                    }
 
-            @include minw($lg-tab) {
-                max-width: 100%;
-            }
+                    a {
+                        color: var(--text-nav);
+                        font-family: $roboto-regular;
+                        font-weight: 500;
+                        font-size: 1.1rem;
+                        line-height: 4.6rem;
+                        letter-spacing: 0.7px;
+                        text-transform: uppercase;
+                        transition: $hover-trans;
 
-            @include minw($xl) {
-                width: 100%;
-                max-width: 100%;
+                        &:hover {
+                            color: var(--light-1);
+                        }
+                    }
+                }
             }
         }
     }
 
-    .navbar {
-        a {
-            color: white;
-            font-size: 2rem;
-            font-family: $sentient-bold;
+    &__toggler {
+        display: flex;
+        align-items: center;
+
+        span {
+            display: none;
+
+            @include minw($mob) {
+                display: block;
+                color: var(--text-nav);
+                font-family: $roboto-regular;
+                font-weight: 500;
+                font-size: 1.1rem;
+                line-height: 4.6rem;
+                letter-spacing: 0.7px;
+                text-transform: uppercase;
+                margin-left: 0.8rem;
+            }
         }
+    }
+
+    &__logo {
+        @include minw($lg-tab) {}
     }
 }

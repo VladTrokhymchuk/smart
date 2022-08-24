@@ -1,22 +1,56 @@
 .header-section {
   background: var(--dark-1);
 }
-.header__logo img {
-  max-width: 70%;
+.header__top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 5rem;
 }
 @media only screen and (min-width: 1024px) {
-  .header__logo img {
-    max-width: 100%;
+  .header__top {
+    gap: 6.1rem;
   }
 }
-@media only screen and (min-width: 1900px) {
-  .header__logo img {
-    width: 100%;
-    max-width: 100%;
+.header__top .navbar .menu-list ul {
+  display: flex;
+  gap: 1.4rem;
+}
+@media only screen and (min-width: 1024px) {
+  .header__top .navbar .menu-list ul {
+    gap: 3.4rem;
   }
 }
-.header .navbar a {
-  color: white;
-  font-size: 2rem;
-  font-family: "Roboto-Bold", sans-serif;
+.header__top .navbar .menu-list ul a {
+  color: var(--text-nav);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 4.6rem;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  transition: 0.35s cubic-bezier(0.76, 0, 0.24, 1) 0s;
+}
+.header__top .navbar .menu-list ul a:hover {
+  color: var(--light-1);
+}
+.header__toggler {
+  display: flex;
+  align-items: center;
+}
+.header__toggler span {
+  display: none;
+}
+@media only screen and (min-width: 480px) {
+  .header__toggler span {
+    display: block;
+    color: var(--text-nav);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 4.6rem;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    margin-left: 0.8rem;
+  }
 }

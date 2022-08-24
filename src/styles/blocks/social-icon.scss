@@ -1,0 +1,30 @@
+@import '../core';
+
+.social-icon {
+    flex-grow: 1;
+
+    ul {
+        display: flex;
+        gap: 1.5rem;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        @include minw($lg-tab) {
+            gap: 3.5rem;
+        }
+
+        li {
+            a {
+                svg {
+                    path {
+                        transition: $hover-trans;
+
+                        &:hover {
+                            fill: var(--light-1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -29,13 +29,17 @@
                     ?>
                 </div>
 
-                <label class="toggler-wrapper style-1">
-                    <input type="checkbox">
-                    <div class="toggler-slider">
-                        <div class="toggler-knob"></div>
-                    </div>
-                </label>
-                
+                <div class="header__toggler">
+                    <label class="toggler-wrapper style-1">
+                        <input type="checkbox">
+                        <div class="toggler-slider">
+                            <div class="toggler-knob"></div>
+                        </div>
+                    </label>
+                    <span>dark</span>
+                </div>
+
+                <?php get_template_part('./template-parts/block/block-social'); ?>
             </div>
 
             <div class="header__bott">

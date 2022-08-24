@@ -1,0 +1,20 @@
+.social-icon {
+  flex-grow: 1;
+}
+.social-icon ul {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+@media only screen and (min-width: 1024px) {
+  .social-icon ul {
+    gap: 3.5rem;
+  }
+}
+.social-icon ul li a svg path {
+  transition: 0.35s cubic-bezier(0.76, 0, 0.24, 1) 0s;
+}
+.social-icon ul li a svg path:hover {
+  fill: var(--light-1);
+}
