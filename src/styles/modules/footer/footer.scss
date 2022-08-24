@@ -1,5 +1,150 @@
 @import "../../core.scss";
 
 .footer {
-   
+    background: var(--dark-1);
+    padding-top: 4.5rem;
+
+    &__wrap {
+        @include minw($sm-tab) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__nav {
+        .menu-list {
+            @include minw($lg-tab) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0rem 8rem;
+            }
+
+            li {
+                margin-bottom: 1.2rem;
+
+                a {
+                    color: var(--blue);
+                    font-family: $roboto-regular;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 3.4rem;
+                    letter-spacing: 0.7px;
+                    display: flex;
+                    align-items: center;
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        background: var(--blue);
+                        width: 1.9rem;
+                        height: 0.1rem;
+                        margin-right: 1.1rem;
+                    }
+                }
+
+                .sub-menu {
+                    margin-top: 1.2rem;
+
+                    li {
+                        a {
+                            color: var(--footer-text);
+                            font-family: $roboto-regular;
+                            font-weight: 400;
+                            font-size: 1.2rem;
+                            line-height: 2rem;
+                            letter-spacing: 0.002em;
+                            transition: $hover-trans;
+
+                            @include minw($lg-tab) {
+                                line-height: 2.8rem;
+                            }
+
+                            &:hover {
+                                color: var(--blue);
+                            }
+
+                            &::before {
+                                content: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__subscribe {
+        width: 100%;
+        max-width: 31.8rem;
+
+        .qq {
+            width: 100%;
+            max-width: 31.8rem;
+            height: 42rem;
+            background: rgba(0, 0, 0, 0.21);
+            border-radius: 4px;
+        }
+    }
+
+    &__bott {
+        border-top: 0.1rem solid rgba(29, 28, 32, 0.72);
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+
+        @include minw($sm-tab) {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 2.4rem;
+            min-height: 9.9rem;
+
+            @include minw($sm-tab) {
+                gap: 11.1rem;
+                flex-direction: unset;
+            }
+        }
+
+        &__logo {
+
+            @include minw($sm-tab) {
+                margin-bottom: 1.2rem;
+            }
+
+            svg {
+                path {
+                    fill: var(--white);
+                }
+            }
+        }
+
+        &__navbar {
+            ul {
+                display: flex;
+                gap: 1.2rem;
+
+                @include minw($sm-tab) {
+                    gap: 5rem;
+                }
+
+                a {
+                    color: var(--white);
+                    font-family: $roboto-regular;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                    transition: $hover-trans;
+
+                    &:hover {
+                        color: var(--blue);
+                    }
+                }
+            }
+        }
+    }
 }
