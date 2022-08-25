@@ -2,10 +2,14 @@
   background: var(--dark-1);
   padding-top: 4.5rem;
 }
+.footer__wrap {
+  padding-bottom: 3.1rem;
+}
 @media only screen and (min-width: 768px) {
   .footer__wrap {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 6.1rem;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -17,6 +21,11 @@
 }
 .footer__nav .menu-list li {
   margin-bottom: 1.2rem;
+}
+@media only screen and (min-width: 1024px) {
+  .footer__nav .menu-list li {
+    margin-bottom: 0.55rem;
+  }
 }
 .footer__nav .menu-list li a {
   color: var(--blue);
@@ -58,17 +67,6 @@
 }
 .footer__nav .menu-list li .sub-menu li a::before {
   content: none;
-}
-.footer__subscribe {
-  width: 100%;
-  max-width: 31.8rem;
-}
-.footer__subscribe .qq {
-  width: 100%;
-  max-width: 31.8rem;
-  height: 42rem;
-  background: rgba(0, 0, 0, 0.21);
-  border-radius: 4px;
 }
 .footer__bott {
   border-top: 0.1rem solid rgba(29, 28, 32, 0.72);

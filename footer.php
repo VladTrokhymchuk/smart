@@ -9,9 +9,9 @@
                     'theme_location' => 'primary',
                     'menu_class' => 'menu-list'));
                 ?>
-                <div class="footer__subscribe">
-                    <div class="qq"></div>
-                </div>
+                
+                <?php get_template_part('./template-parts/block/block-subscribe'); ?>
+               
             </div>
         </div>
 

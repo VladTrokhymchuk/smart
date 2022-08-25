@@ -5,9 +5,12 @@
     padding-top: 4.5rem;
 
     &__wrap {
+        padding-bottom: 3.1rem;
+
         @include minw($sm-tab) {
             display: flex;
             justify-content: space-between;
+            padding-bottom: 6.1rem;
         }
     }
 
@@ -21,6 +24,10 @@
 
             li {
                 margin-bottom: 1.2rem;
+
+                @include minw($lg-tab) {
+                    margin-bottom: 0.55rem;
+                }
 
                 a {
                     color: var(--blue);
@@ -73,19 +80,6 @@
         }
     }
 
-    &__subscribe {
-        width: 100%;
-        max-width: 31.8rem;
-
-        .qq {
-            width: 100%;
-            max-width: 31.8rem;
-            height: 42rem;
-            background: rgba(0, 0, 0, 0.21);
-            border-radius: 4px;
-        }
-    }
-
     &__bott {
         border-top: 0.1rem solid rgba(29, 28, 32, 0.72);
         padding-top: 2.4rem;
@@ -111,7 +105,6 @@
         }
 
         &__logo {
-
             @include minw($sm-tab) {
                 margin-bottom: 1.2rem;
             }
