@@ -1237,6 +1237,13 @@ table.bt.bt--no-header tbody td::before {
   }
 }
 
+.front-events-section {
+  background: #EFF0F4;
+  border-radius: 0.4rem;
+  padding-top: 5rem;
+  padding-bottom: 13rem;
+}
+
 .social-icon {
   flex-grow: 1;
 }
