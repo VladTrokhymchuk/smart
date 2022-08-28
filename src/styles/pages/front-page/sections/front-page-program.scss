@@ -1,0 +1,61 @@
+@import '../../../core';
+
+.front-program {
+    &-section {
+        padding-top: 8.1rem;
+        padding-bottom: 11.9rem;
+
+        @include minw($lg-tab) {
+            padding-top: 11.1rem;
+            padding-bottom: 13.9rem;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 2.3rem;
+        line-height: 120%;
+        color: var(--text-primary);
+        margin-bottom: 4.4rem;
+
+        @include minw($lg-tab) {
+            font-size: 3rem;
+        }
+    }
+
+    &__info {
+        ul {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 3rem;
+
+            @include minw($sm-tab) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include minw($lg-tab) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            li {
+                background: var(--white);
+                box-shadow: 0px 4px 25px rgba(43, 45, 55, 0.05), 0px 10px 30px rgba(43, 45, 55, 0.03);
+                border-radius: 0.4rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 7.7rem 2.6rem 4.8rem 2.6rem;
+
+                p {
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.1rem;
+                    color: var(--text-primary);
+                    text-align: center;
+                    margin-top: 3rem;
+                }
+            }
+        }
+    }
+}

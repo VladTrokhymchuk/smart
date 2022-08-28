@@ -15,7 +15,6 @@
     </div>
 </section>
 
-
 <section class="front-advice-section">
     <div class="container">
         <div class="front-advice__box">
@@ -44,6 +43,31 @@
                     <?php the_field('advice_info'); ?>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="front-program-section">
+    <div class="container">
+        <div class="front-program__title">
+            <h3><?php the_field('program_title'); ?></h3>
+        </div>
+
+        <div class="front-program__info">
+            <ul>
+                <?php if( have_rows('programa') ): while( have_rows('programa') ): the_row(); ?>
+                <li>
+                    <div class="icon">
+                        <?php
+                            $programa_icon = get_sub_field('programa_icon');
+                            $svg_icon_prog = file_get_contents( get_attached_file( $programa_icon['ID'] ) );
+                            echo $svg_icon_prog;
+                        ?>
+                    </div>
+                    <p><?php the_sub_field('programa_desc'); ?></p>
+                </li>
+                <?php endwhile; endif; ?>
+            </ul>
         </div>
     </div>
 </section>

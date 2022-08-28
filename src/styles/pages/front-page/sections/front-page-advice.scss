@@ -7,9 +7,11 @@
     }
 
     &__box {
-        display: flex;
-        justify-content: space-between;
-        gap: 6rem;
+        @include minw($lg-tab) {
+            display: flex;
+            justify-content: space-between;
+            gap: 6rem;
+        }
     }
 
     &__contact {
