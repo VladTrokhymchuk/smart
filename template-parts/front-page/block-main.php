@@ -125,53 +125,50 @@
                 <?php
                     $featured_posts_events = get_field('events');
                     if( $featured_posts_events ): ?>
-                <ul>
-                    <?php foreach( $featured_posts_events as $post ): 
-                        setup_postdata($post); 
-                    ?>
-                    <li>
-                        <div class="front-events__info__img">
-                            <?php if ( get_field('img_events') ) : $img_events = get_field('img_events'); ?>
-                            <img src='<?=esc_url($img_events['url']) ?>' alt='<?=esc_attr($img_events['alt']); ?>'>
-                            <?php endif; ?>
-                            <span><?php the_field('sticker_events'); ?></span>
-                        </div>
+                    <ul class="front-events__info__box">
+                        <?php foreach( $featured_posts_events as $post ): 
+                            setup_postdata($post);?>
+                            <li>
+                                <div class="front-events__info__img">
+                                    <?php if ( get_field('img_events') ) : $img_events = get_field('img_events'); ?>
+                                        <img src='<?=esc_url($img_events['url']) ?>' alt='<?=esc_attr($img_events['alt']); ?>'>
+                                    <?php endif; ?>
+                                    <span><?php the_field('sticker_events'); ?></span>
+                                </div>
 
-                        <div class="front-events__info__cont">
-                            <?php 
-                                $date_string = get_field('data_events');
-                                $date = DateTime::createFromFormat('Ymd', $date_string);
-                            ?>
-                            <p class="front-events__info__cont__date"><?php echo $date->format('j'); ?>
-                                <span><?php echo $date->format('M'); ?></span>
-                            </p>
+                                <div class="front-events__info__cont">
+                                    <?php 
+                                        $date_string = get_field('data_events');
+                                        $date = DateTime::createFromFormat('Ymd', $date_string);
+                                    ?>
+                                    <p class="front-events__info__cont__date"><?php echo $date->format('j'); ?>
+                                        <span><?php echo $date->format('M'); ?></span>
+                                    </p>
 
-                            <p class="front-events__info__cont__uptitle"><?php the_field('nadzagolovok'); ?></p>
-                            <a class="front-events__info__cont__title"
-                                href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                            <p class="front-events__info__cont__desc"><?php the_field( 'desc_events' ); ?></p>
+                                    <p class="front-events__info__cont__uptitle"><?php the_field('nadzagolovok'); ?></p>
+                                    <a class="front-events__info__cont__title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                    <p class="front-events__info__cont__desc"><?php the_field( 'desc_events' ); ?></p>
 
-                            <ul class="front-events__info__cont__tag">
-                                <?php 
-                                    $terms = wp_get_post_terms($post->ID, 'events-types', array("fields" => "all"));
-                                    $services_page_obj = get_page_by_path( 'events' );
-                                    $services_link = get_permalink( $services_page_obj );
-                                ?>
-                                <?php foreach($terms as $term): ?>
-                                <li>
-                                    <a href="<?= $services_link . '#' . $term->slug ?>">
-                                        <?= $term->name; ?>
-                                    </a>
-                                </li>
-                                <?php endforeach;  ?>
-                            </ul>
-                        </div>
-                    </li>
-                    <?php endforeach; ?>
-                </ul>
-
+                                    <ul class="front-events__info__cont__tag">
+                                        <?php 
+                                            $terms = wp_get_post_terms($post->ID, 'events-types', array("fields" => "all"));
+                                            $services_page_obj = get_page_by_path( 'events' );
+                                            $services_link = get_permalink( $services_page_obj );
+                                        ?>
+                                        <?php foreach($terms as $term): ?>
+                                            <li>
+                                                <a href="<?= $services_link . '#' . $term->slug ?>">
+                                                    <?= $term->name; ?>
+                                                </a>
+                                            </li>
+                                        <?php endforeach;  ?>
+                                    </ul>
+                                </div>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
                 <?php 
-                wp_reset_postdata(); ?>
+                    wp_reset_postdata(); ?>
                 <?php endif; ?>
             </div>
         </div>
