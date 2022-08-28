@@ -16,7 +16,7 @@
   --footer-text: #F7F7F9;
   --table-text-head: #EBF3FF;
   --text-primary: #1D1D1F;
-  --text-secondary: #484F55;
+  --text-secondary: #3D4652;
   --text-nav: #9EA6B1;
   --blue: #00ACD4;
   --red-hover: #AD0C26;
@@ -58,15 +58,15 @@
   font-display: swup;
 }
 @font-face {
-  font-family: "Sentient-BoldItalic";
-  src: url("../../../fonts/Sentient-BoldItalic.otf");
+  font-family: "Segoe-UI";
+  src: url("../../../fonts/Regular.ttf");
   font-style: normal;
   font-weight: normal;
   font-display: swup;
 }
 @font-face {
-  font-family: "Sentient-LightItalic";
-  src: url("../../../fonts/Sentient-LightItalic.otf");
+  font-family: "Segoe-UI-Bold";
+  src: url("../../../fonts/Segoe-UI-Bold.ttf");
   font-style: normal;
   font-weight: normal;
   font-display: swup;
@@ -575,11 +575,70 @@ body {
   }
 }
 
+.default {
+  background: var(--white);
+  box-shadow: 0px 4px 25px rgba(43, 45, 55, 0.05), 0px 10px 30px rgba(43, 45, 55, 0.1), 0px 41px 40px rgba(43, 45, 55, 0.1);
+  border-radius: 0.4rem;
+  padding: 2.1rem 2.5rem 3rem 2.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .default {
+    max-width: 37rem;
+  }
+}
+.default .form__title {
+  margin-bottom: 2.5rem;
+}
+.default .form__title span {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: var(--text-primary);
+}
+@media only screen and (min-width: 1024px) {
+  .default .form__title span {
+    font-size: 1.6rem;
+  }
+}
+.default .form__item input {
+  background: var(--white);
+  border: 0.1rem solid #DEE1EC;
+  border-radius: 0.4rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: -0.32px;
+  color: #5F6B7C;
+  width: 100%;
+  min-height: 4rem;
+}
+@media only screen and (min-width: 1024px) {
+  .default .form__item input {
+    max-width: unset;
+  }
+}
+.default .form__item input::placeholder {
+  color: #5F6B7C;
+}
+.default .form__item input:focus {
+  border-color: #636363;
+}
+.default .form__item .wpcf7-not-valid-tip {
+  display: block;
+}
+.default .form__submit {
+  margin-top: 2.8rem;
+}
+
 .form .screen-reader-response {
   display: none;
 }
 .form .invalid .wpcf7-response-output {
   display: none;
+}
+.form .invalid .wpcf7-form-control-wrap {
+  color: #fe1717;
 }
 .form__title {
   margin-bottom: 2.7rem;
@@ -596,7 +655,7 @@ body {
   margin-bottom: 1.8rem;
 }
 .form__subtitle span {
-  font-family: "Roboto", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.9rem;
@@ -609,10 +668,18 @@ body {
 .form__item {
   position: relative;
 }
+.form__item:not(:last-child) {
+  margin-bottom: 1.4rem;
+}
+@media only screen and (min-width: 1280px) {
+  .form__item:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+}
 .form__item input {
   background: var(--white);
   border-radius: 5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.9rem;
@@ -646,13 +713,15 @@ body {
   position: absolute;
   bottom: 0.6rem;
   right: 0;
+  top: 2px;
   padding: 0.8rem;
   background: var(--red);
-  color: var(--white);
+  color: #fe1717;
   border-radius: 0.4rem;
   font-style: italic;
   line-height: 2rem;
   font-size: 1rem;
+  display: none;
 }
 .form__submit--relative {
   position: absolute;
@@ -672,7 +741,7 @@ body {
   gap: 0.8rem;
 }
 .form__accept span {
-  font-family: "Roboto", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -705,13 +774,22 @@ body {
   height: 2.8rem;
   color: var(--white);
 }
-.btn--accent-2 .btn__prime {
-  background-color: var(--white);
-  transition: 0.35s cubic-bezier(0.76, 0, 0.24, 1) 0s;
+.btn--accent-2 {
+  border-radius: 0.4rem;
+  height: 4rem;
 }
-.btn--accent-2 .btn__prime:hover {
+.btn--accent-2 .btn__radius {
   color: var(--white);
-  background-color: var(--dark-4);
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.03em;
+}
+@media only screen and (min-width: 1024px) {
+  .btn--accent-2 .btn__radius {
+    font-size: 1.8rem;
+  }
 }
 
 .btn-search {

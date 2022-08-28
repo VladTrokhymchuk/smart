@@ -1,0 +1,98 @@
+@import '../../../core';
+
+.front-advice {
+    &-section {
+        position: relative;
+        overflow: visible;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        gap: 6rem;
+    }
+
+    &__contact {
+        margin-top: -5rem;
+
+        @include minw($lg-tab) {
+            flex-basis: 37rem;
+            flex-shrink: 0;
+        }
+
+        @include minw($pc) {
+            margin-top: -8rem;
+        }
+
+        .default {
+            margin: 0 auto;
+
+            @include minw($lg-tab) {
+                margin: 0;
+            }
+        }
+    }
+
+    &__info {
+        margin-top: 5.5rem;
+
+        @include minw($lg-tab) {
+            margin-top: 4.3rem;
+            max-width: 69.9rem;
+        }
+
+        &__top {
+            margin-bottom: 2.4rem;
+
+            @include minw($pc) {
+                margin-bottom: 4.4rem;
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                justify-content: space-between;
+
+                @include minw($sm-tab) {
+                    gap: 2rem;
+                    justify-content: unset;
+                }
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.1rem;
+                    font-family: $roboto-regular;
+                    color: var(--text-primary);
+                    letter-spacing: 0.01em;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+
+                    @include minw($lg-tab) {
+                        gap: 1.5rem;
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        &__cont {
+            h4 {
+                color: var(--text-primary);
+                font-weight: 600;
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+            }
+
+            p {
+                margin-top: 2.5rem;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2.1rem;
+                color: var(--text-secondary);
+            }
+        }
+    }
+}

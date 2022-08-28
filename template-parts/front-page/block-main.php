@@ -1,44 +1,47 @@
 <section class="front-head-section">
+    <div class="front-head__bg">
+        <?php if(isTablet() || !isMobile()): ?>
+        <?php if ( get_field('head_bg', 'options') ) : $head_bg = get_field('head_bg', 'options'); ?>
+        <img src='<?=esc_url($head_bg['sizes'][isMobile() ? 'medium_large' : 'full_hd'] ); ?>'
+            alt='<?=esc_attr($head_bg['alt']); ?>'>
+        <?php endif; endif;?>
+    </div>
+
     <div class="container">
         <div class="front-head__info">
-        <h1><?php the_field('test'); ?></h1>
             <h1><?php the_field('title'); ?></h1>
             <p><?php the_field('subtitle'); ?></p>
         </div>
-        <div class="front-head__swip">
-            <div class="front-head__numb">
-                <ul>
-                    <?php if( have_rows('phone_rep', 'options') ): while( have_rows('phone_rep', 'options') ): the_row(); ?>
-                    <?php $phone = get_sub_field('phone');?>
-                    <li><a href='<?=esc_url( $phone['url'] ); ?>'> <?=esc_html( $phone['title'] ); ?> </a></li>
-                    <?php endwhile; endif; ?>
-                </ul>
+    </div>
+</section>
+
+
+<section class="front-advice-section">
+    <div class="container">
+        <div class="front-advice__box">
+            <div class="front-advice__contact">
+                <?php get_template_part('./template-parts/block/block-contact'); ?>
             </div>
-            <div class="front-head__lay">
-                <?php $img_logo = get_field('img_logo', 'options'); 
-                    if ($img_logo):
-                ?>
-                <div class="front-head__lay__logo">
-                    <div class="front-head__lay__logo__img">
-                        <?php
-                                $svg_markup = file_get_contents( get_attached_file( $img_logo['ID'] ) );
-                                echo $svg_markup;
+
+            <div class="front-advice__info">
+                <div class="front-advice__info__top">
+                    <ul>
+                        <?php if( have_rows('info') ): while( have_rows('info') ): the_row(); ?>
+                        <li>
+                            <div class="icon">
+                                <?php
+                                $img_icon = get_sub_field('info_icon');
+                                $svg_icon = file_get_contents( get_attached_file( $img_icon['ID'] ) );
+                                echo $svg_icon;
                             ?>
-                    </div>
-                </div>
-                <?php endif; ?>
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <?php if( have_rows('swiper_rep') ): while( have_rows('swiper_rep') ): the_row(); ?>
-                        <div class="swiper-slide">
-                            <?php $img_r = get_sub_field('img_r');?>
-                            <div class="front-head__swip__img">
-                                <img src='<?=esc_url( $img_r['sizes'][isMobile() ? 'medium_large' : 'full_hd'] ); ?>'
-                                    alt='<?=esc_attr($img_r['alt']); ?>'>
                             </div>
-                        </div>
+                            <span><?php the_sub_field('info_span'); ?></span>
+                        </li>
                         <?php endwhile; endif; ?>
-                    </div>
+                    </ul>
+                </div>
+                <div class="front-advice__info__cont">
+                    <?php the_field('advice_info'); ?>
                 </div>
             </div>
         </div>

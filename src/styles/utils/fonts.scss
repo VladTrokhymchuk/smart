@@ -18,16 +18,16 @@ $fonts-folder: '../../../fonts';
 }
 
 @font-face {
-    font-family: "Sentient-BoldItalic";
-    src: url("#{$fonts-folder}/Sentient-BoldItalic.otf");
+    font-family: "Segoe-UI";
+    src: url("#{$fonts-folder}/Regular.ttf");
     font-style: normal;
     font-weight: normal;
     font-display: swup;
 }
 
 @font-face {
-    font-family: "Sentient-LightItalic";
-    src: url("#{$fonts-folder}/Sentient-LightItalic.otf");
+    font-family: "Segoe-UI-Bold";
+    src: url("#{$fonts-folder}/Segoe-UI-Bold.ttf");
     font-style: normal;
     font-weight: normal;
     font-display: swup;

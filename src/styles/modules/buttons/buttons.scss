@@ -27,15 +27,19 @@
     }
 
     &--accent-2 {
-        .btn {
-            &__prime {
-                background-color: var(--white);
-                transition: $hover-trans;
+        border-radius: 0.4rem;
+        height: 4rem;
 
-                &:hover {
-                    color: var(--white);
-                    background-color: var(--dark-4);
-                }
+        .btn__radius {
+            color: var(--white);
+            font-family: $segoe-regular;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            letter-spacing: 0.03em;
+
+            @include minw($lg-tab) {
+                font-size: 1.8rem;
             }
         }
     }

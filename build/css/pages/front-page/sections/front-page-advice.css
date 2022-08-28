@@ -1,0 +1,90 @@
+.front-advice-section {
+  position: relative;
+  overflow: visible;
+}
+.front-advice__box {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+}
+.front-advice__contact {
+  margin-top: -5rem;
+}
+@media only screen and (min-width: 1024px) {
+  .front-advice__contact {
+    flex-basis: 37rem;
+    flex-shrink: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .front-advice__contact {
+    margin-top: -8rem;
+  }
+}
+.front-advice__contact .default {
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1024px) {
+  .front-advice__contact .default {
+    margin: 0;
+  }
+}
+.front-advice__info {
+  margin-top: 5.5rem;
+}
+@media only screen and (min-width: 1024px) {
+  .front-advice__info {
+    margin-top: 4.3rem;
+    max-width: 69.9rem;
+  }
+}
+.front-advice__info__top {
+  margin-bottom: 2.4rem;
+}
+@media only screen and (min-width: 1280px) {
+  .front-advice__info__top {
+    margin-bottom: 4.4rem;
+  }
+}
+.front-advice__info__top ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 768px) {
+  .front-advice__info__top ul {
+    gap: 2rem;
+    justify-content: unset;
+  }
+}
+.front-advice__info__top ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-primary);
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+@media only screen and (min-width: 1024px) {
+  .front-advice__info__top ul li {
+    gap: 1.5rem;
+    font-size: 1.8rem;
+  }
+}
+.front-advice__info__cont h4 {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+.front-advice__info__cont p {
+  margin-top: 2.5rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: var(--text-secondary);
+}

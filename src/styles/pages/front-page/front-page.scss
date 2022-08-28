@@ -1,4 +1,9 @@
 @import '../../core';
 @import '../../main';
 @import './sections/front-page-head';
+@import './sections/front-page-advice';
 @import '../../blocks/social-icon';
+
+main {
+    font-family: $segoe-regular;
+}

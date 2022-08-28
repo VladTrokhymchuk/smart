@@ -1,11 +1,62 @@
-.front-head {
-  color: red;
-}
 .front-head-section {
-  padding: 5rem 0;
+  background-color: #00daab;
+  position: relative;
+  padding: 9rem 0;
 }
 @media only screen and (min-width: 1024px) {
   .front-head-section {
-    padding: 10rem 0;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .front-head-section .container {
+    position: absolute;
+    top: 8rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .front-head__bg img {
+    width: 100%;
+  }
+}
+.front-head__info {
+  max-width: 62.5rem;
+}
+.front-head__info h1 {
+  font-family: "Segoe UI Bold", sans-serif;
+  font-weight: 900;
+  font-size: 4.6rem;
+  line-height: 102.01%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #A611B3;
+  margin-bottom: 3.1rem;
+}
+@media only screen and (min-width: 1024px) {
+  .front-head__info h1 {
+    font-size: 7rem;
+    margin-bottom: 3.1rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .front-head__info h1 {
+    font-size: 10rem;
+    margin-bottom: 5.1rem;
+  }
+}
+.front-head__info p {
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 120%;
+  color: var(--white);
+}
+@media only screen and (min-width: 1024px) {
+  .front-head__info p {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .front-head__info p {
+    font-size: 3.2rem;
   }
 }
