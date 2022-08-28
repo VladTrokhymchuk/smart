@@ -1,0 +1,125 @@
+@import '../../../core';
+
+.front-speaker {
+    &-section {
+        padding-bottom: 8rem;
+
+        @include minw($lg-tab) {
+            padding-bottom: 11rem;
+        }
+    }
+
+    &__box {
+        @include minw($sm-tab) {
+            display: flex;
+            gap: 8rem;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 2.3rem;
+        line-height: 4rem;
+        color: var(--blue);
+        text-align: center;
+        margin-bottom: 3rem;
+
+        @include minw($sm-tab) {
+            margin-top: 5rem;
+        }
+
+        @include minw($lg-tab) {
+            font-size: 3rem;
+            margin-top: 4.5rem;
+        }
+
+        h3 {
+            @include minw($pc) {
+                display: flex;
+                align-items: center;
+            }
+
+            &::after {
+                @include minw($pc) {
+                    content: '';
+                    display: block;
+                    width: 16rem;
+                    height: 0.1rem;
+                    background-color: var(--blue);
+                    margin-left: 6rem;
+                }
+            }
+        }
+    }
+
+    &__info {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+
+                @include minw($sm-tab) {
+                    flex-direction: row;
+                    gap: 3.5rem;
+                    max-width: 72.9rem;
+                }
+            }
+        }
+
+        &__img {
+            background: #E8E8EC;
+            width: 13.6rem;
+            height: 13.6rem;
+            border: 1rem solid var(--white);
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0px 4px 25px rgba(43, 45, 55, 0.05), 0px 10px 30px rgba(43, 45, 55, 0.1), 0px 41px 40px rgba(43, 45, 55, 0.1);
+
+            @include minw($sm-tab) {
+                flex-shrink: 0;
+            }
+
+            img {
+                object-position: 0rem 1rem;
+            }
+        }
+
+        &__cont {
+            text-align: center;
+
+            @include minw($sm-tab) {
+                text-align: left;
+            }
+
+            a {
+                font-weight: 600;
+                font-size: 2.3rem;
+                line-height: 4rem;
+                color: var(--text-primary);
+
+                @include minw($lg-tab) {
+                    font-size: 3rem;
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: #5F6B7C;
+                margin-top: 1rem;
+
+                @include minw($lg-tab) {
+                    font-size: 1.8rem;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}

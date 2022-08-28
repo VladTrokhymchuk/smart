@@ -3,7 +3,12 @@
 @import './sections/front-page-head';
 @import './sections/front-page-advice';
 @import './sections/front-page-program';
+@import './sections/front-page-speaker';
 @import '../../blocks/social-icon';
+
+body {
+    background-color: var(--bg);
+}
 
 main {
     font-family: $segoe-regular;

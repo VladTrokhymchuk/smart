@@ -42,21 +42,21 @@ function init_post_types()
         'menu_icon' => 'dashicons-analytics'
     ));
 
-    register_post_type('products', array(
+    register_post_type('speaker', array(
         'label' => null,
         'labels' => array(
-            'name' => 'Продукти', // основное название для типа записи
-            'singular_name' => 'Продукти', // название для одной записи этого типа
-            'add_new' => 'Додати Продукт', // для добавления новой записи
-            'add_new_item' => 'Додавання', // заголовка у вновь создаваемой записи в админ-панели.
-            'edit_item' => 'Редагувати', // для редактирования типа записи
-            'new_item' => 'Новий продукт', // текст новой записи
-            'view_item' => 'Перегляд', // для просмотра записи этого типа.
-            'search_items' => 'Пошук', // для поиска по этим типам записи
-            'not_found' => 'Не знайдено', // если в результате поиска ничего не было найдено
-            'not_found_in_trash' => 'В корзині не знайдено', // если не было найдено в корзине
+            'name' => 'Спикеры', // основное название для типа записи
+            'singular_name' => 'Спикеры', // название для одной записи этого типа
+            'add_new' => 'Добавить спикера', // для добавления новой записи
+            'add_new_item' => 'Добавление', // заголовка у вновь создаваемой записи в админ-панели.
+            'edit_item' => 'Редактировать', // для редактирования типа записи
+            'new_item' => 'Новый спикер', // текст новой записи
+            'view_item' => 'Смотреть', // для просмотра записи этого типа.
+            'search_items' => 'Поиск', // для поиска по этим типам записи
+            'not_found' => 'Не найдено', // если в результате поиска ничего не было найдено
+            'not_found_in_trash' => 'В корзине не знайдено', // если не было найдено в корзине
             'parent_item_colon' => '', // для родителей (у древовидных типов)
-            'menu_name' => 'Продукти', // название меню
+            'menu_name' => 'Спикеры', // название меню
         ),
         'description' => '',
         'public' => true,
@@ -74,7 +74,7 @@ function init_post_types()
         'supports' => array('title', 'author', 'revisions'), // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
         'taxonomies' => array(),
         'has_archive' => true,
-        'rewrite' => array('slug' => 'products-post'),
+        'rewrite' => array('slug' => 'speaker-post'),
         'query_var' => true,
         'menu_icon' => 'dashicons-analytics'
     ));

@@ -71,3 +71,42 @@
         </div>
     </div>
 </section>
+
+<section class="front-speaker-section">
+    <div class="container">
+
+        <div class="front-speaker__box">
+            <div class="front-speaker__title">
+                <h3><?php the_field('speaker_title'); ?></h3>
+            </div>
+
+            <div class="front-speaker__info">
+                <?php
+                    $featured_posts = get_field('speakers');
+                    if( $featured_posts ): ?>
+                <ul>
+                    <?php foreach( $featured_posts as $post ): 
+                        setup_postdata($post); 
+                    ?>
+                        <li>
+                            <div class="front-speaker__info__img">
+                                <?php if ( get_field('img_speaker') ) : $img_speaker = get_field('img_speaker'); ?>
+                                <img src='<?=esc_url($img_speaker['url']) ?>' alt='<?=esc_attr($img_speaker['alt']); ?>'>
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="front-speaker__info__cont">
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                <p><?php the_field( 'desc_speaker' ); ?></p>
+                            </div>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+
+                <?php 
+                wp_reset_postdata(); ?>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</section>

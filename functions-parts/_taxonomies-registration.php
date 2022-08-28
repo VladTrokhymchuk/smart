@@ -30,14 +30,14 @@ function create_taxonomy()
         'show_in_quick_edit' => null, // по умолчанию значение show_ui
     ));
 
-    register_taxonomy('products-types', array('products'), array(
+    register_taxonomy('speaker-types', array('speaker'), array(
         'label' => '',
         'labels' => array(
-            'name' => 'Категорія продукту',
-            'singular_name' => 'Категорія',
-            'search_items' => 'Знайти категорію',
+            'name' => 'Категория спикеров',
+            'singular_name' => 'Категория',
+            'search_items' => 'Найти категорию',
         ),
-        'description' => 'Категорія продукту', // описание таксономии
+        'description' => 'Категория спикера', // описание таксономии
         'public' => true,
         'publicly_queryable' => null, // равен аргументу public
         'show_in_nav_menus' => true, // равен аргументу public
