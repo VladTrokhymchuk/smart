@@ -139,11 +139,13 @@
 
                                 <div class="front-events__info__cont">
                                     <?php 
-                                        $date_string = get_field('data_events');
-                                        $date = DateTime::createFromFormat('Ymd', $date_string);
+                                        // $date_string = get_field('data_events');
+                                        // $date = DateTime::createFromFormat('Ymd', $date_string);
+                                        // echo $date->format('j');
+                                        // echo $date->format('M');
                                     ?>
-                                    <p class="front-events__info__cont__date"><?php echo $date->format('j'); ?>
-                                        <span><?php echo $date->format('M'); ?></span>
+                                    <p class="front-events__info__cont__date"><?php the_field('data_t'); ?>
+                                        <span><?php the_field('month_t'); ?></span>
                                     </p>
 
                                     <p class="front-events__info__cont__uptitle"><?php the_field('nadzagolovok'); ?></p>
