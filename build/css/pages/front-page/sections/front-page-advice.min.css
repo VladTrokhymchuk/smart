@@ -84,6 +84,7 @@
   }
 }
 .front-advice__info__cont h4 {
+  font-family: "Segoe UI-SemiBold";
   color: var(--text-primary);
   font-weight: 600;
   font-size: 1.8rem;

@@ -27,7 +27,7 @@
 }
 .btn--accent-2 .btn__radius {
   color: var(--white);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2.4rem;

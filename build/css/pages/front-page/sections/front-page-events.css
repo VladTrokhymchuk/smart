@@ -26,6 +26,7 @@
   }
 }
 .front-events__title h3 {
+  font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 120%;
@@ -37,6 +38,7 @@
   }
 }
 .front-events__title a {
+  font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -137,7 +139,7 @@
   margin: 2rem 0 1.4rem 0;
 }
 .front-events__info__cont__title {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 2rem;
   line-height: 2.7rem;
@@ -145,7 +147,7 @@
   margin: 1.4rem 0 2rem 0;
 }
 .front-events__info__cont__desc {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.1rem;

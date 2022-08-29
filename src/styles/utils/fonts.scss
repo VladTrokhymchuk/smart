@@ -1,9 +1,8 @@
 $fonts-folder: '../../../fonts';
 
-
 @font-face {
     font-family: "Roboto-Regular";
-    src: url("#{$fonts-folder}/Roboto-Regular.ttf");
+    src: url("#{$fonts-folder}/Roboto-Regular.woff2") format("woff2");
     font-style: normal;
     font-weight: normal;
     font-display: swup;
@@ -18,57 +17,28 @@ $fonts-folder: '../../../fonts';
 }
 
 @font-face {
-    font-family: "Segoe-UI";
-    src: url("#{$fonts-folder}/Regular.ttf");
+    font-family: "Segoe UI Black";
+    font-display: swap;
+    src: url("#{$fonts-folder}/SegoeUI-Black.woff2") format("woff2"),
+    url("#{$fonts-folder}/SegoeUI-Black.woff") format("woff");
+    font-weight: 900;
     font-style: normal;
-    font-weight: normal;
-    font-display: swup;
 }
 
 @font-face {
-    font-family: "Segoe-UI-Bold";
-    src: url("#{$fonts-folder}/Segoe-UI-Bold.ttf");
+    font-family: "Segoe UI-SemiBold";
+    font-display: swap;
+    src: url("#{$fonts-folder}/SegoeUI-SemiBold.woff2") format("woff2"),
+    url("#{$fonts-folder}/SegoeUI-SemiBold.woff") format("woff");
+    font-weight: 600;
     font-style: normal;
-    font-weight: normal;
-    font-display: swup;
 }
 
 @font-face {
-    font-family: "Boska-Black";
-    src: url("#{$fonts-folder}/Boska-Black.otf");
+    font-family: "Segoe UI";
+    font-display: swap;
+    src: url("#{$fonts-folder}/SegoeUI.woff2") format("woff2"),
+    url("#{$fonts-folder}/SegoeUI.woff") format("woff");
+    font-weight: 400;
     font-style: normal;
-    font-weight: normal;
-    font-display: swup;
-}
-
-@font-face {
-    font-family: "Boska-Regular";
-    src: url("#{$fonts-folder}/Boska-Regular.otf");
-    font-style: normal;
-    font-weight: normal;
-    font-display: swup;
-}
-
-@font-face {
-    font-family: "Boska-Bold";
-    src: url("#{$fonts-folder}/Boska-Bold.otf");
-    font-style: normal;
-    font-weight: normal;
-    font-display: swup;
-}
-
-@font-face {
-    font-family: "Boska-Medium";
-    src: url("#{$fonts-folder}/Boska-Medium.otf");
-    font-style: normal;
-    font-weight: normal;
-    font-display: swup;
-}
-
-@font-face {
-    font-family: "Boska-MediumItalic";
-    src: url("#{$fonts-folder}/Boska-MediumItalic.otf");
-    font-style: normal;
-    font-weight: normal;
-    font-display: swup;
 }

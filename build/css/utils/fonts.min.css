@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("../../../fonts/Roboto-Regular.ttf");
+  src: url("../../../fonts/Roboto-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
   font-display: swup;
@@ -13,51 +13,23 @@
   font-display: swup;
 }
 @font-face {
-  font-family: "Segoe-UI";
-  src: url("../../../fonts/Regular.ttf");
+  font-family: "Segoe UI Black";
+  font-display: swap;
+  src: url("../../../fonts/SegoeUI-Black.woff2") format("woff2"), url("../../../fonts/SegoeUI-Black.woff") format("woff");
+  font-weight: 900;
   font-style: normal;
-  font-weight: normal;
-  font-display: swup;
 }
 @font-face {
-  font-family: "Segoe-UI-Bold";
-  src: url("../../../fonts/Segoe-UI-Bold.ttf");
+  font-family: "Segoe UI-SemiBold";
+  font-display: swap;
+  src: url("../../../fonts/SegoeUI-SemiBold.woff2") format("woff2"), url("../../../fonts/SegoeUI-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
-  font-weight: normal;
-  font-display: swup;
 }
 @font-face {
-  font-family: "Boska-Black";
-  src: url("../../../fonts/Boska-Black.otf");
+  font-family: "Segoe UI";
+  font-display: swap;
+  src: url("../../../fonts/SegoeUI.woff2") format("woff2"), url("../../../fonts/SegoeUI.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
-  font-weight: normal;
-  font-display: swup;
-}
-@font-face {
-  font-family: "Boska-Regular";
-  src: url("../../../fonts/Boska-Regular.otf");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swup;
-}
-@font-face {
-  font-family: "Boska-Bold";
-  src: url("../../../fonts/Boska-Bold.otf");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swup;
-}
-@font-face {
-  font-family: "Boska-Medium";
-  src: url("../../../fonts/Boska-Medium.otf");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swup;
-}
-@font-face {
-  font-family: "Boska-MediumItalic";
-  src: url("../../../fonts/Boska-MediumItalic.otf");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swup;
 }

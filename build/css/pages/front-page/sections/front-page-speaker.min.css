@@ -13,6 +13,7 @@
   }
 }
 .front-speaker__title {
+  font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 2.3rem;
   line-height: 4rem;
@@ -91,6 +92,7 @@
   }
 }
 .front-speaker__info__cont a {
+  font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 2.3rem;
   line-height: 4rem;

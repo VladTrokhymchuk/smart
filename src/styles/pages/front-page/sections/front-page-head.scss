@@ -25,9 +25,6 @@
 
         .container {
             @include minw($lg-tab) {
-                // position: absolute;
-                // top: 8rem;
-
                 position: relative;
                 z-index: 5;
             }
@@ -55,7 +52,7 @@
         max-width: 62.5rem;
 
         h1 {
-            font-family: $segoe-bold;
+            font-family: $segoe-black;
             font-weight: 900;
             font-size: 4.6rem;
             line-height: 102.01%;
@@ -76,6 +73,7 @@
         }
 
         p {
+            font-family: $segoe-semibold;
             font-weight: 600;
             font-size: 1.7rem;
             line-height: 120%;

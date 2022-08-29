@@ -46,7 +46,7 @@
 
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("../../../fonts/Roboto-Regular.ttf");
+  src: url("../../../fonts/Roboto-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
   font-display: swup;
@@ -59,53 +59,25 @@
   font-display: swup;
 }
 @font-face {
-  font-family: "Segoe-UI";
-  src: url("../../../fonts/Regular.ttf");
+  font-family: "Segoe UI Black";
+  font-display: swap;
+  src: url("../../../fonts/SegoeUI-Black.woff2") format("woff2"), url("../../../fonts/SegoeUI-Black.woff") format("woff");
+  font-weight: 900;
   font-style: normal;
-  font-weight: normal;
-  font-display: swup;
 }
 @font-face {
-  font-family: "Segoe-UI-Bold";
-  src: url("../../../fonts/Segoe-UI-Bold.ttf");
+  font-family: "Segoe UI-SemiBold";
+  font-display: swap;
+  src: url("../../../fonts/SegoeUI-SemiBold.woff2") format("woff2"), url("../../../fonts/SegoeUI-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
-  font-weight: normal;
-  font-display: swup;
 }
 @font-face {
-  font-family: "Boska-Black";
-  src: url("../../../fonts/Boska-Black.otf");
+  font-family: "Segoe UI";
+  font-display: swap;
+  src: url("../../../fonts/SegoeUI.woff2") format("woff2"), url("../../../fonts/SegoeUI.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
-  font-weight: normal;
-  font-display: swup;
-}
-@font-face {
-  font-family: "Boska-Regular";
-  src: url("../../../fonts/Boska-Regular.otf");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swup;
-}
-@font-face {
-  font-family: "Boska-Bold";
-  src: url("../../../fonts/Boska-Bold.otf");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swup;
-}
-@font-face {
-  font-family: "Boska-Medium";
-  src: url("../../../fonts/Boska-Medium.otf");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swup;
-}
-@font-face {
-  font-family: "Boska-MediumItalic";
-  src: url("../../../fonts/Boska-MediumItalic.otf");
-  font-style: normal;
-  font-weight: normal;
-  font-display: swup;
 }
 html {
   scroll-behavior: auto;
@@ -597,7 +569,7 @@ body {
   margin-bottom: 2.5rem;
 }
 .default .form__title span {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 150%;
@@ -662,7 +634,7 @@ body {
   margin-bottom: 1.8rem;
 }
 .form__subtitle span {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.9rem;
@@ -686,7 +658,7 @@ body {
 .form__item input {
   background: var(--white);
   border-radius: 5rem;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.9rem;
@@ -748,7 +720,7 @@ body {
   gap: 0.8rem;
 }
 .form__accept span {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -787,7 +759,7 @@ body {
 }
 .btn--accent-2 .btn__radius {
   color: var(--white);
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2.4rem;
@@ -966,7 +938,7 @@ table.bt.bt--no-header tbody td::before {
   max-width: 62.5rem;
 }
 .front-head__info h1 {
-  font-family: "Segoe UI Bold", sans-serif;
+  font-family: "Segoe UI Black";
   font-weight: 900;
   font-size: 4.6rem;
   line-height: 102.01%;
@@ -988,6 +960,7 @@ table.bt.bt--no-header tbody td::before {
   }
 }
 .front-head__info p {
+  font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 1.7rem;
   line-height: 120%;
@@ -1090,6 +1063,7 @@ table.bt.bt--no-header tbody td::before {
   }
 }
 .front-advice__info__cont h4 {
+  font-family: "Segoe UI-SemiBold";
   color: var(--text-primary);
   font-weight: 600;
   font-size: 1.8rem;
@@ -1114,6 +1088,7 @@ table.bt.bt--no-header tbody td::before {
   }
 }
 .front-program__title {
+  font-family: "Segoe UI-SemiBold";
   text-align: center;
   font-weight: 600;
   font-size: 2.3rem;
@@ -1174,6 +1149,7 @@ table.bt.bt--no-header tbody td::before {
   }
 }
 .front-speaker__title {
+  font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 2.3rem;
   line-height: 4rem;
@@ -1252,6 +1228,7 @@ table.bt.bt--no-header tbody td::before {
   }
 }
 .front-speaker__info__cont a {
+  font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 2.3rem;
   line-height: 4rem;
@@ -1304,6 +1281,7 @@ table.bt.bt--no-header tbody td::before {
   }
 }
 .front-events__title h3 {
+  font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 120%;
@@ -1315,6 +1293,7 @@ table.bt.bt--no-header tbody td::before {
   }
 }
 .front-events__title a {
+  font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1415,7 +1394,7 @@ table.bt.bt--no-header tbody td::before {
   margin: 2rem 0 1.4rem 0;
 }
 .front-events__info__cont__title {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 2rem;
   line-height: 2.7rem;
@@ -1423,7 +1402,7 @@ table.bt.bt--no-header tbody td::before {
   margin: 1.4rem 0 2rem 0;
 }
 .front-events__info__cont__desc {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.1rem;
@@ -1488,5 +1467,5 @@ body {
 }
 
 main {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI";
 }
