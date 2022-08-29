@@ -16,9 +16,7 @@
 <body <?php body_class( $class ) ?>>
 
     <header class="header-section">
-
         <div class="header__top">
-
             <div class="container">
                 <div class="header__top__box">
                     <div class='navbar'>

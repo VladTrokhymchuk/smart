@@ -4,6 +4,7 @@
     &-section {
         background-color: #00daab;
         position: relative;
+        overflow: visible;
         padding: 9rem 0;
 
         @include minw($lg-tab) {

@@ -1,6 +1,7 @@
 .front-head-section {
   background-color: #00daab;
   position: relative;
+  overflow: visible;
   padding: 9rem 0;
 }
 @media only screen and (min-width: 1024px) {

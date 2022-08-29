@@ -13,6 +13,7 @@
             <p><?php the_field('subtitle'); ?></p>
         </div>
     </div>
+    <?php get_template_part('./template-parts/block/share-btn'); ?>
 </section>
 
 <section class="front-advice-section">

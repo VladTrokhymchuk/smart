@@ -1,0 +1,43 @@
+@import '../core';
+
+.share {
+    &-btn {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        z-index: 5;
+        background: var(--white);
+        box-shadow: 0px 3px 10px rgba(45, 48, 58, 0.05), 0px 19px 25px rgba(45, 48, 58, 0.15);
+        border-radius: 50%;
+        width: 4.5rem;
+        height: 4.5rem;
+
+        @include minw($lg-tab) {
+            right: 15.3%;
+            bottom: -2.2rem;
+            top: unset;
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        cursor: pointer;
+
+        svg {
+            path {
+                transition: $hover-trans;
+            }
+        }
+
+        &:hover {
+            svg {
+                path {
+                    fill: var(--blue);
+                }
+            }
+        }
+    }
+}
