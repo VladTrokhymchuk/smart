@@ -911,7 +911,7 @@ table.bt.bt--no-header tbody td::before {
 }
 @media only screen and (min-width: 1900px) {
   .front-head-section {
-    padding-top: 24.1rem;
+    padding-top: 16.1rem;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -938,6 +938,11 @@ table.bt.bt--no-header tbody td::before {
 .front-head__info {
   max-width: 62.5rem;
 }
+@media only screen and (min-width: 1900px) {
+  .front-head__info {
+    max-width: 74.5rem;
+  }
+}
 .front-head__info h1 {
   font-family: "Segoe UI Black";
   font-weight: 900;
@@ -960,6 +965,12 @@ table.bt.bt--no-header tbody td::before {
     margin-bottom: 5.1rem;
   }
 }
+@media only screen and (min-width: 1900px) {
+  .front-head__info h1 {
+    font-size: 11rem;
+    margin-bottom: 6.1rem;
+  }
+}
 .front-head__info p {
   font-family: "Segoe UI-SemiBold";
   font-weight: 600;
@@ -975,6 +986,11 @@ table.bt.bt--no-header tbody td::before {
 @media only screen and (min-width: 1280px) {
   .front-head__info p {
     font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .front-head__info p {
+    font-size: 3.6rem;
   }
 }
 

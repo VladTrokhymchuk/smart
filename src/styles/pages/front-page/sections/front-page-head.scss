@@ -21,7 +21,7 @@
         }
 
         @include minw($xl) {
-            padding-top: 24.1rem;
+            padding-top: 16.1rem;
         }
 
         .container {
@@ -52,6 +52,10 @@
     &__info {
         max-width: 62.5rem;
 
+        @include minw($xl) {
+            max-width: 74.5rem;
+        }
+
         h1 {
             font-family: $segoe-black;
             font-weight: 900;
@@ -71,6 +75,11 @@
                 font-size: 10rem;
                 margin-bottom: 5.1rem;
             }
+
+            @include minw($xl) {
+                font-size: 11rem;
+                margin-bottom: 6.1rem;
+            }
         }
 
         p {
@@ -86,6 +95,10 @@
 
             @include minw($pc) {
                 font-size: 3.2rem;
+            }
+
+            @include minw($xl) {
+                font-size: 3.6rem;
             }
         }
     }
