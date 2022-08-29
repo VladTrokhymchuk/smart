@@ -7,21 +7,46 @@
         padding: 9rem 0;
 
         @include minw($lg-tab) {
-            padding: 0;
+            padding-top: 8.1rem;
+            padding-bottom: 8.1rem;
+        }
+
+        @include minw($pc) {
+            padding-bottom: 18.7rem;
+        }
+
+        @include minw($lg-xl) {
+            padding-top: 14.1rem;
+        }
+
+        @include minw($xl) {
+            padding-top: 24.1rem;
         }
 
         .container {
             @include minw($lg-tab) {
-                position: absolute;
-                top: 8rem;
+                // position: absolute;
+                // top: 8rem;
+
+                position: relative;
+                z-index: 5;
             }
         }
     }
 
     &__bg {
+        @include minw($lg-tab) {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+
         img {
             @include minw($lg-tab) {
                 width: 100%;
+                object-fit: cover;
+                height: 100%;
             }
         }
     }

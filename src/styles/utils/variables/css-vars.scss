@@ -35,7 +35,7 @@
     --header-mob-height: 9.8rem;
     --header-desk-width: 10.6rem;
 
-    --container-max-width: 117rem;
+    --container-max-width: 120rem;
     --container-side-padding: 1.5rem;
     // --container-side-margin: calc(50vw - 68.3rem);
 
@@ -44,10 +44,15 @@
     }
 
     @include minw($pc) {
-        --container-side-padding: 8rem;
+        --container-side-padding: 0rem;
     }
 
     @include minw($lg) {
-        --container-side-padding: 17rem;
+        // --container-side-padding: 17rem;
+    }
+
+    @include minw($xl) {
+        --container-max-width: 147rem;
+        --container-side-padding: 10.2rem;
     }
 }

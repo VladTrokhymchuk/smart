@@ -5,18 +5,44 @@
 }
 @media only screen and (min-width: 1024px) {
   .front-head-section {
-    padding: 0;
+    padding-top: 8.1rem;
+    padding-bottom: 8.1rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .front-head-section {
+    padding-bottom: 18.7rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .front-head-section {
+    padding-top: 14.1rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .front-head-section {
+    padding-top: 24.1rem;
   }
 }
 @media only screen and (min-width: 1024px) {
   .front-head-section .container {
+    position: relative;
+    z-index: 5;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .front-head__bg {
     position: absolute;
-    top: 8rem;
+    top: 0;
+    height: 100%;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1024px) {
   .front-head__bg img {
     width: 100%;
+    object-fit: cover;
+    height: 100%;
   }
 }
 .front-head__info {

@@ -40,7 +40,12 @@
 
         @include minw($lg-tab) {
             margin-top: 4.3rem;
+            margin-left: auto;
             max-width: 69.9rem;
+        }
+
+        @include minw($xl) {
+            max-width: 73.9rem;
         }
 
         &__top {

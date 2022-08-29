@@ -24,7 +24,7 @@
   --bg-bage: #EEEAE8;
   --header-mob-height: 9.8rem;
   --header-desk-width: 10.6rem;
-  --container-max-width: 117rem;
+  --container-max-width: 120rem;
   --container-side-padding: 1.5rem;
 }
 @media only screen and (min-width: 768px) {
@@ -34,11 +34,12 @@
 }
 @media only screen and (min-width: 1280px) {
   :root {
-    --container-side-padding: 8rem;
+    --container-side-padding: 0rem;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1900px) {
   :root {
-    --container-side-padding: 17rem;
+    --container-max-width: 147rem;
+    --container-side-padding: 10.2rem;
   }
 }
