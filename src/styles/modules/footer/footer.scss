@@ -7,14 +7,26 @@
     &__wrap {
         padding-bottom: 3.1rem;
 
-        @include minw($sm-tab) {
+        @include minw($lg-mob) {
             display: flex;
             justify-content: space-between;
             padding-bottom: 6.1rem;
+            gap: 4rem;
+
+            .subscribe {
+                max-width: 31.8rem;
+                margin-left: auto;
+                margin-top: 0;
+                height: 42rem;
+            }
         }
     }
 
     &__nav {
+        @include minw($lg-mob) {
+            margin-top: 3rem;
+        }
+
         .menu-list {
             @include minw($lg-tab) {
                 display: flex;
@@ -24,6 +36,7 @@
 
             li {
                 margin-bottom: 1.2rem;
+                font-family: $segoe-regular;
 
                 @include minw($lg-tab) {
                     margin-bottom: 0.55rem;
@@ -51,11 +64,12 @@
 
                 .sub-menu {
                     margin-top: 1.2rem;
+                    font-family: $segoe-regular;
 
                     li {
                         a {
                             color: var(--footer-text);
-                            font-family: $roboto-regular;
+                            font-family: $segoe-regular;
                             font-weight: 400;
                             font-size: 1.2rem;
                             line-height: 2rem;
@@ -121,7 +135,7 @@
                 display: flex;
                 gap: 1.2rem;
 
-                @include minw($sm-tab) {
+                @include minw($lg-tab) {
                     gap: 5rem;
                 }
 

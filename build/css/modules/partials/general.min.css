@@ -58,7 +58,7 @@ body {
   background: rgba(0, 0, 0, 0.21);
   border-radius: 0.4rem;
   padding: 3.1rem 2.2rem;
-  margin-top: 2rem;
+  margin-top: 3.1rem;
 }
 @media only screen and (min-width: 768px) {
   .subscribe {
@@ -80,8 +80,6 @@ body {
 }
 .default .form__title {
   margin-bottom: 2.5rem;
-}
-.default .form__title span {
   font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 1.4rem;
@@ -89,7 +87,7 @@ body {
   color: var(--text-primary);
 }
 @media only screen and (min-width: 1024px) {
-  .default .form__title span {
+  .default .form__title {
     font-size: 1.6rem;
   }
 }
@@ -134,8 +132,6 @@ body {
 }
 .form__title {
   margin-bottom: 2.7rem;
-}
-.form__title span {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
@@ -145,8 +141,6 @@ body {
 }
 .form__subtitle {
   margin-bottom: 1.8rem;
-}
-.form__subtitle span {
   font-family: "Segoe UI";
   font-weight: 400;
   font-size: 1.3rem;

@@ -317,11 +317,23 @@ input:-webkit-autofill:focus {
 .footer__wrap {
   padding-bottom: 3.1rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .footer__wrap {
     display: flex;
     justify-content: space-between;
     padding-bottom: 6.1rem;
+    gap: 4rem;
+  }
+  .footer__wrap .subscribe {
+    max-width: 31.8rem;
+    margin-left: auto;
+    margin-top: 0;
+    height: 42rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .footer__nav {
+    margin-top: 3rem;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -333,6 +345,7 @@ input:-webkit-autofill:focus {
 }
 .footer__nav .menu-list li {
   margin-bottom: 1.2rem;
+  font-family: "Segoe UI";
 }
 @media only screen and (min-width: 1024px) {
   .footer__nav .menu-list li {
@@ -359,10 +372,11 @@ input:-webkit-autofill:focus {
 }
 .footer__nav .menu-list li .sub-menu {
   margin-top: 1.2rem;
+  font-family: "Segoe UI";
 }
 .footer__nav .menu-list li .sub-menu li a {
   color: var(--footer-text);
-  font-family: "Roboto", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -417,7 +431,7 @@ input:-webkit-autofill:focus {
   display: flex;
   gap: 1.2rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .footer__bott__navbar ul {
     gap: 5rem;
   }
@@ -545,7 +559,7 @@ body {
   background: rgba(0, 0, 0, 0.21);
   border-radius: 0.4rem;
   padding: 3.1rem 2.2rem;
-  margin-top: 2rem;
+  margin-top: 3.1rem;
 }
 @media only screen and (min-width: 768px) {
   .subscribe {
@@ -567,8 +581,6 @@ body {
 }
 .default .form__title {
   margin-bottom: 2.5rem;
-}
-.default .form__title span {
   font-family: "Segoe UI-SemiBold";
   font-weight: 600;
   font-size: 1.4rem;
@@ -576,7 +588,7 @@ body {
   color: var(--text-primary);
 }
 @media only screen and (min-width: 1024px) {
-  .default .form__title span {
+  .default .form__title {
     font-size: 1.6rem;
   }
 }
@@ -621,8 +633,6 @@ body {
 }
 .form__title {
   margin-bottom: 2.7rem;
-}
-.form__title span {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.8rem;
@@ -632,8 +642,6 @@ body {
 }
 .form__subtitle {
   margin-bottom: 1.8rem;
-}
-.form__subtitle span {
   font-family: "Segoe UI";
   font-weight: 400;
   font-size: 1.3rem;

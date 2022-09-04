@@ -4,7 +4,7 @@
     background: rgba(0, 0, 0, 0.21);
     border-radius: 0.4rem;
     padding: 3.1rem 2.2rem;
-    margin-top: 2rem;
+    margin-top: 3.1rem;
 
     @include minw($sm-tab) {
         max-width: 31.8rem;
@@ -25,17 +25,14 @@
     .form {
         &__title {
             margin-bottom: 2.5rem;
+            font-family: $segoe-semibold;
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 150%;
+            color: var(--text-primary);
 
-            span {
-                font-family: $segoe-semibold;
-                font-weight: 600;
-                font-size: 1.4rem;
-                line-height: 150%;
-                color: var(--text-primary);
-
-                @include minw($lg-tab) {
-                    font-size: 1.6rem;
-                }
+            @include minw($lg-tab) {
+                font-size: 1.6rem;
             }
         }
 
@@ -86,35 +83,29 @@
             display: none;
         }
 
-        .wpcf7-form-control-wrap{
+        .wpcf7-form-control-wrap {
             color: #fe1717;
         }
     }
 
     &__title {
         margin-bottom: 2.7rem;
-
-        span {
-            font-family: $roboto-regular;
-            font-weight: 400;
-            font-size: 1.8rem;
-            line-height: 3.4rem;
-            letter-spacing: 0.7px;
-            color: var(--blue);
-        }
+        font-family: $roboto-regular;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 3.4rem;
+        letter-spacing: 0.7px;
+        color: var(--blue);
     }
 
     &__subtitle {
         margin-bottom: 1.8rem;
-
-        span {
-            font-family: $segoe-regular; //'Segoe UI'
-            font-weight: 400;
-            font-size: 1.3rem;
-            line-height: 1.9rem;
-            letter-spacing: 0.001em;
-            color: var(--white);
-        }
+        font-family: $segoe-regular; //'Segoe UI'
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.001em;
+        color: var(--white);
     }
 
     &__fields {

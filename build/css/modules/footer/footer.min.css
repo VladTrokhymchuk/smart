@@ -5,11 +5,23 @@
 .footer__wrap {
   padding-bottom: 3.1rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .footer__wrap {
     display: flex;
     justify-content: space-between;
     padding-bottom: 6.1rem;
+    gap: 4rem;
+  }
+  .footer__wrap .subscribe {
+    max-width: 31.8rem;
+    margin-left: auto;
+    margin-top: 0;
+    height: 42rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .footer__nav {
+    margin-top: 3rem;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -21,6 +33,7 @@
 }
 .footer__nav .menu-list li {
   margin-bottom: 1.2rem;
+  font-family: "Segoe UI";
 }
 @media only screen and (min-width: 1024px) {
   .footer__nav .menu-list li {
@@ -47,10 +60,11 @@
 }
 .footer__nav .menu-list li .sub-menu {
   margin-top: 1.2rem;
+  font-family: "Segoe UI";
 }
 .footer__nav .menu-list li .sub-menu li a {
   color: var(--footer-text);
-  font-family: "Roboto", sans-serif;
+  font-family: "Segoe UI";
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 2rem;
@@ -105,7 +119,7 @@
   display: flex;
   gap: 1.2rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .footer__bott__navbar ul {
     gap: 5rem;
   }
