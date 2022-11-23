@@ -413,3 +413,17 @@ add_filter('xmlrpc_enabled', '__return_false');
 //         $output .= "$indent</ul></div></div>\n";
 //     }
 // }
+
+ 
+// add_filter('acf/settings/save_json', 'my_acf_json_save_point');
+ 
+// function my_acf_json_save_point( $path ) {
+    
+//     // update path
+//     $path = get_template_directory_uri() . '/acf-json';
+    
+    
+//     // return
+//     return $path;
+    
+// }
